@@ -1,0 +1,27 @@
+@import './pages/';
+@import './components/';
+@import './reset';
+@import './variables';
+@import './typography';
+@import './utils';
+
+body {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  min-width: $content-width-xsm;
+  max-width: calc(100vw - $spacing-x6);
+  margin-left: $spacing-x3;
+  margin-right: $spacing-x3;
+  width: 100%;
+
+  @media (min-width: $screen-lg) {
+    width: $content-width-lg;
+  }
+}

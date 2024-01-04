@@ -1,0 +1,75 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: $white;
+  color: $black;
+  height: 60px;
+  font-size: $text-16;
+  z-index: 1;
+  border-bottom: 1px solid $grey-light;
+
+  @media (min-width: $screen-lg) {
+    height: 100px;
+  }
+
+  &__container {
+    width: $content-width-sm;
+
+    @media (min-width: $screen-lg) {
+      width: $content-width-lg;
+    }
+  }
+
+  &__logo {
+    display: inline-block;
+    height: $logo-sm-y;
+    width: $logo-sm-x;
+    margin-right: $spacing-x2;
+
+    @media (min-width: $screen-lg) {
+      height: $logo-lg-y;
+      width: $logo-lg-x;
+      margin-right: $spacing-x4;
+    }
+  }
+
+  &__items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    &--right {
+      display: flex;
+    }
+
+    &--left {
+      display: flex;
+    }
+  }
+
+  &__item {
+    border-bottom: 3px solid transparent;
+    padding-bottom: 3px;
+    transition: 0.2s;
+
+    &:hover {
+      border-bottom: 3px solid $yellow;
+    }
+
+    a.active {
+      font-weight: bold;
+    }
+
+    &--with-icon {
+      display: flex;
+      align-items: center;
+
+      img {
+        width: 20px;
+        height: 20px;
+        margin-right: $spacing-x1;
+      }
+    }
+  }
+}

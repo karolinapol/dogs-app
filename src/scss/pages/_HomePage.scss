@@ -1,0 +1,20 @@
+@import '../variables';
+
+.home-page {
+  margin-bottom: $spacing-x10;
+}
+
+.dog-adding {
+  box-shadow: $shadow;
+  margin-bottom: $spacing-x10;
+  padding: $spacing-x5;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.dog-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}

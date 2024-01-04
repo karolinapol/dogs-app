@@ -1,0 +1,21 @@
+@import '../variables';
+@import '../typography';
+
+.dog-card {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  &__content {
+    padding: $spacing-x4;
+    margin-bottom: $spacing-x4;
+    border-radius: $spacing-x1;
+    min-width: 500px;
+    max-width: 800px;
+    box-shadow: $shadow;
+
+    p {
+      margin-bottom: $spacing-x2;
+    }
+  }
+}

@@ -1,0 +1,47 @@
+@import '../variables';
+@import '../typography';
+
+.label {
+  font-size: $text-10;
+  display: inline-block;
+  margin-bottom: $spacing-x1;
+  opacity: $opacity-none;
+}
+
+.input {
+  background-color: $white;
+  border: 1px solid $grey;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: inherit;
+  font-weight: 300;
+  display: block;
+  padding: $spacing-x2 $spacing-x3;
+  width: 100%;
+
+  &::placeholder {
+    color: $grey-dark;
+  }
+
+  &:focus {
+    outline: none;
+    border-color: $yellow;
+  }
+
+  &:hover {
+    outline: none;
+    border-color: $yellow;
+  }
+
+  &--sm {
+    width: 150px;
+  }
+
+  &--md {
+    width: 230px;
+  }
+
+  &--lg {
+    width: 250px;
+  }
+}
